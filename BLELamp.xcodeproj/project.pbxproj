@@ -29,9 +29,22 @@
 		E23CF2A02DBDF97400E01EED /* BLELampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLELampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E2D6EC402DBF470800A41BF1 /* Exceptions for "BLELamp" folder in "BLELamp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E23CF2852DBDF97300E01EED /* BLELamp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E23CF2882DBDF97300E01EED /* BLELamp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E2D6EC402DBF470800A41BF1 /* Exceptions for "BLELamp" folder in "BLELamp" target */,
+			);
 			path = BLELamp;
 			sourceTree = "<group>";
 		};
@@ -396,14 +409,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BLELamp/Preview Content\"";
-				DEVELOPMENT_TEAM = 6K8PJTL53B;
+				DEVELOPMENT_TEAM = PRSD34VC7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BLELamp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "BLELamp needs Bluetooth access to connect to and control your lamp.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "BLELamp needs Bluetooth access to connect to and control your lamp.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,14 +440,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BLELamp/Preview Content\"";
-				DEVELOPMENT_TEAM = 6K8PJTL53B;
+				DEVELOPMENT_TEAM = PRSD34VC7G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BLELamp/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "BLELamp needs Bluetooth access to connect to and control your lamp.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "BLELamp needs Bluetooth access to connect to and control your lamp.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

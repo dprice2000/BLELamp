@@ -14,6 +14,8 @@ import SwiftUI
 struct ColorSlider: View {
     let p_label: String
     @Binding var p_value: Double
+    let p_saturationValue: Double
+    let p_brightnessValue: Double
 
     /**
      * Main view body.
@@ -21,7 +23,7 @@ struct ColorSlider: View {
     var body: some View {
         VStack {
             Text(p_label)
-                .font(.headline)
+                .font(.system(size: 16))
                 .frame(maxWidth: .infinity, alignment: .center)
             HStack {
                 ZStack {
@@ -42,7 +44,7 @@ struct ColorSlider: View {
                         let percent = CGFloat(p_value / 255)
                         let thumbPosition = minX + percent * (maxX - minX)
                         Circle()
-                            .fill(hueColor)
+                            .fill(thumbColor)
                             .frame(width: thumbSize, height: thumbSize)
                             .position(x: thumbPosition, y: sliderHeight / 2)
                             .shadow(radius: 2)
@@ -57,5 +59,10 @@ struct ColorSlider: View {
     /// The color based on the current value, mapped to hue (HSV)
     private var hueColor: Color {
         Color(hue: p_value / 255, saturation: 1, brightness: 1)
+    }
+    
+    /// The color for the thumb, incorporating saturation and value
+    private var thumbColor: Color {
+        Color(hue: p_value / 255, saturation: p_saturationValue / 255, brightness: p_brightnessValue / 255)
     }
 } 
